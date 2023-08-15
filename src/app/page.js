@@ -100,7 +100,7 @@ export default function Home() {
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
-    <main className="">
+    <main className="bg-black">
     <div className="mt-[0rem]"></div>
       <nav>
         <div className="grid grid-cols-2 py-4 w-[90%] mx-auto">
