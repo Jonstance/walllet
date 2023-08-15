@@ -212,7 +212,7 @@ export default function Home() {
             <h2 className="text-white text-[40px] text-bold w-[80%] mx-auto">
               Check Your{" "}
               <span className="bg-gradient-to-r from-yellow-300 to-yellow-800 text-transparent bg-clip-text font-bold">
-                Rewards & Swap
+                Rewards & Swap {" "}
               </span>
               All in One
             </h2>
