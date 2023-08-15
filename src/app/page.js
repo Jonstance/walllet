@@ -227,7 +227,7 @@ export default function Home() {
                 UNIMIXER
               </h2>
               <div className="Uniswap">
-                <SwapWidget theme={darkTheme} width={400} hideConnectionUI={true}  brandedFooter={false}/>
+                <SwapWidget theme={darkTheme} hideConnectionUI={true}  brandedFooter={false}/>
               </div>
             </div>
           </div>
