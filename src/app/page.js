@@ -210,17 +210,15 @@ export default function Home() {
         <div className="grid md:grid-cols-2 grid-cols-1 w-[90%] mx-auto gap-x-20 gap-y-8">
           <div className="text-white my-auto">
             <h2 className="text-white text-[40px] text-bold w-[80%] mx-auto">
-              The Most User-Friendly{" "}
+              Check Your{" "}
               <span className="bg-gradient-to-r from-yellow-300 to-yellow-800 text-transparent bg-clip-text font-bold">
-                Token Swap App
+                Rewards & Swap
               </span>
-              is Here
+              All in One
             </h2>
             <p className="text-[18px] w-[80%] text-justify mx-auto">
-              Do you find yourself constantly navigating through a labyrinth of
-              complicated token exchanges and sluggish trade speed ? say goodbye
-              to the hassle and hello to a better trasing experience with
-              swiftapp
+              UniMixer ($UNIMIX) is an Ethereum Protocol and Telegram Bot that 
+              provides revenue share to $UNIMIX holders with $UNI & $UNIBOT rewards
             </p>
           </div>
           <div>
@@ -229,7 +227,7 @@ export default function Home() {
                 UNIMIXER
               </h2>
               <div className="Uniswap">
-                <SwapWidget theme={darkTheme} width={500} hideConnectionUI={true}  brandedFooter={false}/>
+                <SwapWidget theme={darkTheme} width={400} hideConnectionUI={true}  brandedFooter={false}/>
               </div>
             </div>
           </div>
