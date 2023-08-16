@@ -24,6 +24,8 @@ import { Alchemy, Network } from "alchemy-sdk";
 
 
 
+
+
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, zora],
   [
@@ -237,24 +239,35 @@ export default function Home() {
       <div>
         <div className='grid md:grid-cols-2 grid-cols-1 w-[90%] mx-auto gap-x-20 gap-y-8 '>
         <div className='my-auto text-white bg-blue-700 p-10 rounded-[10px]'>
-            <div className=''>
-                <p>Uniswap Token Balance</p>
+            <div className='flex flex-row'>
+            <Image src="/download.png" width={25} height={25} alt='discord' />
+                <p>$UNI Balance</p>
             </div>
             <div className='bal'>
                 <p>{tokenInfo.uniswapTokenBalance}</p>
             </div>
         </div>
         <div className='my-auto text-white bg-blue-700 p-10 rounded-[10px]'>
-            <div className=''>
-                <p>Unibot Token Balance</p>
+            <div className='flex flex-row'>
+            <Image src="/logo1.jpeg" width={25} height={25} alt='discord' />
+                <p>$UNIBOT Balance</p>
             </div>
             <div className='bal'>
                 <p>{tokenInfo.unibotTokenBalance}</p>
             </div>
         </div>
         </div>
+        
     </div>
       </div>
+      <div className='flex w-full p-10 mt-20 space-x-3 place-content-evenly justify-items-center flex-row'>
+          <a href='https://discord.gg/C8RsgPy6RB' className='rounded-[70px] p-5 bg-white'><Image src="/discord.svg" width={20} height={20} alt='discord' /></a>
+          <a href='https://t.me/unimixer' className='rounded-[70px] p-5 bg-white'><Image src="/telegram.svg" width={20} height={20} alt='discord' /></a>
+          <a href='https://twitter.com/uni_mixer' className='rounded-[70px] p-5 bg-white'><Image src="/twitter.svg" width={20} height={20} alt='discord' /></a>
+        </div>
+        <div className='flex w-full  mt-5 space-x-3 place-content-evenly justify-items-center flex-row'>
+        <a href='https://t.me/unimixerbot' className=' p-5'><Image src="/logo1.jpeg" width={200} height={200} alt='discord' /></a>
+        </div>
     </main>
     </RainbowKitProvider>
     </WagmiConfig>
